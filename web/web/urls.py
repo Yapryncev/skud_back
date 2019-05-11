@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
 
-from .veiws import hello
+#from .veiws import hello
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', hello)
+    path('blog/', include('blog.urls'))
 ]
