@@ -19,7 +19,7 @@ from django.urls import include
 
 #from .veiws import hello
 
-
+#
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls'))
